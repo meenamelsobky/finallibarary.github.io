@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="m-2">CRUD Database</h1>
+    <table class="table  pl-1 text-center">
+        <thead>
+            <th>ID</th>
+            <th>First</th>
+            <th>Last</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Location</th>
+            <th>Hobby</th>
+            <th>Actions</th>
+        </thead>
+        <tbody id="bodycon">
+
+        </tbody>
+
+
+    </table>
+    <div class="m-10">
+        <button class="btn btn-primary m-1" onclick="downloadCSV(clientsList)">Download CSV</button>
+        <button class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#collapseExample">Add Item</button>
+    </div>
+    <form class="w-50 m-auto " id="collapseExample">
+        <label for="firstName">first Name</label>
+        <input type="text" name="First" id="firstName" class="form-control">
+        <label for="lastName">last Name</label>
+        <input type="text" name="Last" id="lastName" class="form-control">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control">
+        <label for="phonephone">phone</label>
+        <input type="tel" name="phone" id="phone" class="form-control">
+        <label for="location">location</label>
+        <input type="text" name="location" id="location" class="form-control">
+        <label for="hobby">hobby</label>
+        <input type="text" name="hobby" id="hobby" class="form-control">
+        <div class="text-center">
+            <button class="btn btn-primary my-1" onclick="addClient()">Submit</button>
+        </div>
+    </form>
+
+
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="testjs.js"></script>
+
+</body>
+
+</html>
